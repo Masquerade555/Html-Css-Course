@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#999900">
+<div class="header" ></div>
+<div class="section" >
+<br><br><br><br>
+
+ <div class="box box1">
+ <center><h1> Rotate Clockwise </h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box2">
+ <center><h1> Rotate AntiClockwise
+</h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box3">
+ <center><h1> Translate X </h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box4">
+ <center><h1> Translate Y</h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box5">
+ <center><h1> Translate XY </h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box6">
+ <center><h1> Scale X </h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box7">
+ <center><h1> Scale Y </h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box8">
+ <center><h1> Scale XY </h1></center>
+
+ <p>
+ Lorem Ipsum is simply dummy text of the
+printing and typesetting industry. Lorem Ipsum has
+been the industry's standard dummy text ever since
+the 1500s, when an unknown printer took a galley of
+typento electronic typesetting,
+ </p>
+
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box9">
+ <center><h1> Skew X </h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box10">
+ <center><h1> Skew Y</h1></center>
+ </div>
+
+ <br><br><br><br>
+
+ <div class="box box11">
+ <center><h1> Skew XY</h1></center>
+ </div>
+
+ <br><br><br><br>
+</div>
+<div class="footer" ></div>
+</body>
+
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+.header{
+background-color:rgba(255,102,0,1);
+height:100px;
+}
+.footer{
+background-color:rgba(255,102,0,1);
+height:100px;
+}
+
+.box{
+background-color:rgba(153,255,0,1);
+height:250px;
+width:250px;
+margin:0px auto;
+transition:all 1s ease-in-out;
+}
+.box1:hover
+{
+transform:rotate(360deg);
+}
+.box2:hover
+{
+transform:rotate(-360deg);
+}
+.box3:hover{
+transform:translateX(30px);
+}
+.box4:hover{
+transform:translateY(30px);
+}
+.box5:hover{
+transform:translate(30px,30px);
+}
+.box6:hover{
+transform:scaleX(3);
+}
+.box7:hover{
+transform:scaleY(3);
+}
+.box8:hover{
+transform:scale(3,3);
+}
+.box9:hover{
+transform:skewX(30deg);
+}
+.box10:hover{
+transform:skewY(30deg);
+}
+.box11:hover{
+transform:skew(30deg,30deg);
+}
+</style>
+</body>
+</html>

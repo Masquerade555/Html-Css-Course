@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="a1"></div>
+
+    <style>
+        .a1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation-name: ae;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes ae{
+            0% {background-color: red;}
+            20% {background-color: blue;}
+            40% {background-color: yellow;}
+            60% {background-color: green;}
+            80% {background-color: tomato;}
+            100% {background-color: chartreuse;}
+        }
+    </style>
+
+    <button class="btn" style="vertical-align: middle;">Press This Button</button>
+
+    <style>
+        .btn{
+            display: inline-block;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            background-color: violet;
+            border: none;
+            color: #ffffff;
+            text-align: center;
+            font-size: 25px;
+            padding: 15px 25px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+            outline: none;
+            opacity: 0.9;
+        }
+
+        .btn span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+
+        }
+
+        .btn span:after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0.5;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .btn:hover span{
+            padding-right: 25px;
+            opacity: 1;
+        }
+
+        .btn:hover span:after{
+            opacity: 1;
+            right: 0;
+        }
+
+        .btn:active{
+            background-color: steelblue;
+            box-shadow: 0 5px slateblue;
+            transform: translateY(4px);
+        }
+    </style>
+</body>
+</html>

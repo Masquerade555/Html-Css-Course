@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .drop{
+            position: relative;
+            display: inline-block;
+        }
+
+        .content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .drop:hover .content{
+            display: block;
+        }
+
+        .des{
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+
+    <div class="drop">
+        <img src="123.png" width="300" height="300">
+        <div class="content">
+            <img src="123.png" width="300" height="300">
+            <div class="des">Demo Text</div>
+        </div>
+    </div>
+
+    <br>
+
+    <img class="i" src="123.png">
+    <style>
+        .i{
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+        }
+    </style>
+
+    <div class="r">
+        <img src="123.png" width="600" height="600">
+    </div>
+
+    <style>
+        .r{
+            mask-image:  url(123.png);
+            mask-repeat: no-repeat;
+            -webkit-mask-image: url(123.png);
+            -webkit-mask-repeat: no-repeat;
+        }
+    </style>
+</body>
+</html>
